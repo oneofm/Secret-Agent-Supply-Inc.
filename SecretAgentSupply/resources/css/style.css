@@ -1,0 +1,165 @@
+html{
+  font-size: 18px;
+  margin: 0;
+}
+body{
+  font-family: Helvetica,sans-serif;
+  color:white;
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo{
+  background-color: black;
+  color: white;
+}
+.logo .container{
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+.logo img{
+  padding-right: 1rem;
+  height: 1.5rem;
+  width: auto;
+}
+.banner{
+  height: 25rem;
+  background-image: url("../img/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.topic{
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+  width: 20rem;
+  font-family: Helvetica;
+  background-color: black;
+}
+.topic h1{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.topic p{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+}
+nav{
+  background-color: firebrick;
+  padding:0.75rem 0;
+}
+nav .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.top .box{
+  width: 30%;
+}
+.top .box .img{
+  padding: 2rem 0;
+  height: 9rem;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top .box .img img{
+  max-width: 8rem;
+}
+.top .box p{
+  background-color: black;
+  text-align: center;
+}
+.bottom{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: : center;
+}
+.info{
+  width:35%;
+}
+.info .name{
+  padding:1rem 0 1rem 2rem;
+  background: black;
+  color: white;
+}
+.info p{
+  color:black;
+}
+footer{
+  padding: 5rem 0;
+  margin-top: 4rem;
+  background-color: black;
+  text-align: left;
+}
+#mobile{
+  display: none;
+}
+@media only screen and (max-width: 1024px){
+  #non-mobile{
+    display: none;
+  }
+  #mobile{
+    display: block;
+    text-align: center;
+  }
+  #glasses{
+    display: none;
+  }
+  .top .box{
+    width: 47%;
+  }
+}
+@media only screen and (max-width:470px){
+  .banner{
+    height: 15rem;
+  }
+  .topic{
+    width:100%;
+    position: relative;
+    top:10rem;
+    padding:1rem 2rem;
+  }
+  .topic h1{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+  .topic p{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .top{
+    flex-wrap: wrap;
+  }
+  #watch{
+    display: none;
+  }
+  .box{
+    width:90%;
+    margin: 3rem auto 0 auto;
+  }
+  .info{
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .bottom{
+    flex-wrap: wrap;
+  }
+  footer{
+    text-align: center;
+  }
+}
